@@ -1,0 +1,7 @@
+
+<input [type]="field.inputType" [name]="field.name"  class="form-control name-container" [placeholder]="field.label" [value]="field.value" (blur)="onChange($event.target.value)" required />
+<div *ngIf="validationFailed">
+    <p style="color: red">{{ field.validator.message }}</p>
+</div>
+
+
